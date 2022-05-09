@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
+
+:root {
+    /* Fonts */
+    --main-font: 'Red Hat Display', sans-serif;
+
+    --h1-font-size: 64px;
+    --h1-font-size: 4rem;
+    --h1-line-height: 64px;
+    --h1-line-height: 4rem;
+
+    --h2-font-size: 40px;
+    --h2-font-size: 2.5rem;
+    --h2-line-height: 44px;
+    --h2-line-height: 2.75rem;
+
+    --overline-font-size: 16px;
+    --overline-font-size: 1rem;
+
+    --body-font-size: 18px;
+    --body-font-size: 1.125rem;
+    --overline-body-line-height: 26px;
+    --overline-body-line-height: 1.625rem;
+
+    --width-text-elements: 327px;
+    --width-text-elements: 20.4375rem;
+
+    /* Main Colors */
+    --main-background-color: #FAFAFA;
+    --title-color: #28283D;
+    --paragraph-color: #87879D;
+    --separator-border-color: rgb(135, 135, 157, .25);
+
+    /* First Button Style Colors */ 
+    --button-color-1: #4D96A9;
+    --software-version-color-1: #8FE3F9;
+    --button-active-color-1: #71C0D4;
+
+     /* Second Button Style Colors */ 
+    --button-color-2: #855FB1;
+    --software-version-color-2: #D9B8FF;
+    --button-active-color-2: #B18BDD;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--main-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main-font);
+    text-align: center;
+}
+
+h1, h2 {
+    width: var(--width-text-elements);
+    color: var(--title-color);
+}
+
+h2 {
+    line-height: 36px;
+    line-height: 2.25rem;
+    font-size: 32px;
+    font-size: 2rem;
+}
+
+p {
+    width: var(--width-text-elements);
+    line-height: var(--overline-body-line-height);
+    font-size: var(--overline-font-size);
+    color: var(--paragraph-color);
+}
+
+button {
+    border: none;
+    border-radius: 29px;
+    border-radius: 1.8125rem;
+    color: #FFF;
+    font-size: var(--overline-font-size);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+/* HEADER STYLE */
+.header {
+    margin-top: 48px;
+    margin-top: 3rem;
+    margin-bottom: 64px;
+    margin-bottom: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.header__logo {
+    margin-bottom: 54px;
+    margin-bottom: 3.375rem;
+    width: 119px;
+    width: 7.4375rem;
+    display: block;
+}
+
+.header__banner {
+    margin-bottom: 48px;
+    margin-bottom: 3rem;
+    width: 414px;
+    width: 25.875rem;
+    display: block;
+}
+
+.header__headline {
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    width: 290px;
+    width: 18.125rem;
+    line-height: var(--h2-line-height);
+    font-size: var(--h2-font-size);
+    font-weight: 900;
+}
+
+.header__copy {
+    margin-bottom: 32px;
+    margin-bottom: 2rem;
+}
+
+.header__button-set {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    gap: 1rem;
+}
+
+.header__first-button-style {
+    width: 193px;
+    width: 12.0625rem;
+    height: 58px;
+    height: 3.625rem;
+    background-color: var(--button-color-1);
+}
+
+.header__first-button-style span {
+    color: var(--software-version-color-1);
+}
+
+.header__second-button-style {
+    width: 139px;
+    width: 8.6875rem;
+    height: 58px;
+    height: 3.625rem;
+    background-color: var(--button-color-2);
+}
+
+/* SEPARATOR STYLE */
+.separator {
+    margin-bottom: 64px;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.separator__line {
+    width: 1px;
+    width: 0.0625rem;
+    height: 84px;
+    height: 5.25rem;
+    background: var(--separator-border-color);
+}
+
+.separator__number {
+    width: 56px;
+    width: 3.5rem;
+    height: 56px;
+    height: 3.5rem;
+    background-color: var(--main-background-color);
+    border: 1px solid var(--separator-border-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--overline-font-size);
+    font-weight: 900;
+}
+
+/* FIRST SECTION STYLE */
+.first-section {
+    margin-bottom: 64px;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-section__images {
+    margin-bottom: 64px;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    gap: 1.5rem;
+}
+
+.first-section__image {
+    width: 151px;
+    width: 9.4375rem;
+    border-radius: 8px;
+    border-radius: 0.5rem;
+}
+
+.content__overline {
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+    line-height: var(--overline-body-line-height);
+    text-transform: uppercase;
+    font-size: var(--overline-font-size);
+    font-weight: 900;
+    letter-spacing: 4px;
+    letter-spacing: 0.25rem;
+    text-align: center;
+    color: var(--button-color-1);
+}
+
+.separator--custom-margin {
+    margin-bottom: -28px;
+    margin-bottom: -1.75rem;
+    position: relative;
+    z-index: 1;
+}
+
+.first-section h2 {
+    margin-bottom: 32px;
+    margin-bottom: 2rem;
+}
+
+/* SECOND SECTION STYLE */
+.second-section {
+    padding-top: 92px;
+    padding-top: 5.75rem;
+    background-color: var(--button-color-1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-section::before {
+    content: "";
+    background-image: url("../assets/mobile/image-footer.jpg");
+    background-size: cover;
+    position: absolute;
+    opacity: .1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.second-section__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-section__content h2,
+.second-section__content p {
+    color: var(--main-background-color);
+}
+
+.second-section__content h2 {
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+}
+
+.second-section__content p {
+    margin-bottom: 32px;
+    margin-bottom: 2rem;
+    font-size: var(--body-font-size);
+}
+
+.second-section__button-style {
+    margin-bottom: 72px;
+    margin-bottom: 4.5rem;
+    width: 193px;
+    width: 12.0625rem;
+    height: 58px;
+    height: 3.625rem;
+    background-color: var(--button-color-2);
+    z-index: 1;
+}
+
+.second-section__button-style span {
+    color: var(--software-version-color-2);
+}
