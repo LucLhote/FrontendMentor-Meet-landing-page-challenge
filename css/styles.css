@@ -437,8 +437,10 @@ button {
 @media screen and (min-width: 1440px) {
     /* HEADER STYLE */
     .header {
-        margin-bottom: 117px;
-        margin-bottom: 7.3125rem;
+        /* margin-bottom: 117px;
+        margin-bottom: 7.3125rem; */
+        margin-bottom: 125px;
+        overflow: visible;
     }
 
     .header__logo {
@@ -467,11 +469,9 @@ button {
     }
 
     .header__content img:last-child {
-        /* position: relative;
-        top: 47px; */
-        /* margin-top: 55px; */
-        position: relative;
-        top: 55px;
+        margin-top: 55px;
+        /* position: relative; */
+        /* top: 55px; */
         /* margin-top: 2.9375rem; */
         /* align-self: flex-end; */
     }
@@ -522,10 +522,12 @@ button {
         width: 15.9375rem
     }
 
-    .first-section p {
-        width: 520px;
-        width: 32.5rem;
+    .first-section p:last-child {
+        /* width: 520px; */
+        width: 540px;
+        /* width: 32.5rem; */
         font-size: var(--body-font-size);
+        /* background-color: green; */
     }
 
     /* SECOND SECOND STYLE */
