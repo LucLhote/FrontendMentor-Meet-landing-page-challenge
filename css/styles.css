@@ -85,7 +85,9 @@ button {
     border-radius: 1.8125rem;
     color: #FFF;
     font-size: var(--overline-font-size);
+    font-style: normal;
     font-weight: 900;
+    letter-spacing: -1px;
     cursor: pointer;
 }
 
@@ -199,7 +201,6 @@ button {
     margin-bottom: 4rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
