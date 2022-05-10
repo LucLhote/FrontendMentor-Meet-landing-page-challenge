@@ -85,15 +85,15 @@ button {
     border-radius: 1.8125rem;
     color: #FFF;
     /* font-size: var(--overline-font-size); */
-    font-size: 15px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 900;
     letter-spacing: -.5px;
     cursor: pointer;
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    gap:1px;
+    gap:1px; */
 }
 
 /* HEADER STYLE */
