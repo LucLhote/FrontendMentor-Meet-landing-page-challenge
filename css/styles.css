@@ -84,10 +84,10 @@ button {
     border-radius: 29px;
     border-radius: 1.8125rem;
     color: #FFF;
-    font-size: var(--overline-font-size);
+    /* font-size: var(--overline-font-size); */
     font-style: normal;
     font-weight: 900;
-    letter-spacing: -1px;
+    /* letter-spacing: -2px; */
     cursor: pointer;
 }
 
