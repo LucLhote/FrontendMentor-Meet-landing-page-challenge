@@ -442,8 +442,9 @@ button {
     }
 
     .header__logo {
-        margin-top: 80px;
-        margin-top: 5rem;
+        /* margin-top: 80px;
+        margin-top: 5rem; */
+        margin-top: 32px;
         margin-bottom: 61px;
         margin-bottom: 3.8125rem;
     }
@@ -460,8 +461,17 @@ button {
 
     .header__content {
         flex-direction: row;
+        align-items: flex-start;
         gap: 88px;
         gap: 5.5rem;
+    }
+
+    .header__content img:last-child {
+        /* position: relative;
+        top: 47px; */
+        margin-top: 55px;
+        /* margin-top: 2.9375rem; */
+        /* align-self: flex-end; */
     }
 
     .header__headline {
@@ -530,7 +540,7 @@ button {
 
     .second-section__content {
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         gap: 92px;
         gap: 5.75rem;
         text-align: left;
@@ -552,5 +562,6 @@ button {
 
     .second-section__button-style {
         margin-bottom: 0;
+        align-self: center;
     }
 }
